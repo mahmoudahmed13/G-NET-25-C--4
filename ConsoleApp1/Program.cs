@@ -6,17 +6,20 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.Write($"Enter a day number (1-7): ");
-            bool days = int.TryParse(Console.ReadLine(), out int day);
-            DaysOfWeek dayOfWeek = (DaysOfWeek)day;
-            Console.WriteLine($"Day: {dayOfWeek}");
+            #region Question 01
 
-            string howDay = dayOfWeek switch
-            {
-                DaysOfWeek.Saturday or DaysOfWeek.Friday => "It's the Weekend",
-                _ => "It's a Workday"
-            };
-            Console.WriteLine(howDay);
+            //Console.Write($"Enter a day number (1-7): ");
+            //bool days = int.TryParse(Console.ReadLine(), out int day);
+            //DaysOfWeek dayOfWeek = (DaysOfWeek)day;
+            //Console.WriteLine($"Day: {dayOfWeek}");
+
+            //string howDay = dayOfWeek switch
+            //{
+            //    DaysOfWeek.Saturday or DaysOfWeek.Friday => "It's the Weekend",
+            //    _ => "It's a Workday"
+            //};
+            //Console.WriteLine(howDay); 
+            #endregion
         }
     }
 }
