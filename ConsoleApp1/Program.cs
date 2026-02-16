@@ -134,6 +134,14 @@ namespace ConsoleApp1
             //Console.WriteLine($"Result = {result}");
             #endregion
 
+            #region Question 05
+
+            //double area = 0, circumference = 0;
+            //CalculateCircle(4, out area, out circumference);
+            //Console.WriteLine($"the area = {area} , the circumference = {circumference} ");
+
+            #endregion
+
             #endregion
         }
         static double Add(double a, double b)
@@ -156,6 +164,12 @@ namespace ConsoleApp1
                 return 0;
             }
             return a / b;
+        }
+
+        static void CalculateCircle(double radius, out double area, out double circumference)
+        {
+            area = Math.PI * radius * radius;
+            circumference = 2 * Math.PI * radius;
         }
 
     }
