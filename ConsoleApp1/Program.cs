@@ -69,7 +69,7 @@ namespace ConsoleApp1
             #endregion
 
             #region Question 03
-            
+
             //int[,] grades = new int[3,4];
             //for (int i = 0; i < grades.GetLength(0); i++) 
             //{
@@ -96,6 +96,68 @@ namespace ConsoleApp1
             #endregion
 
             #endregion
+
+            #region Part 3: Functions (Methods)
+
+            #region Question 04
+
+            //Console.Write("Enter first number: ");
+            //double num1 = Convert.ToDouble(Console.ReadLine());
+
+            //Console.Write("Enter second number: ");
+            //double num2 = Convert.ToDouble(Console.ReadLine());
+
+            //Console.Write("Enter operation (+, -, *, /): ");
+            //string op = Console.ReadLine();
+
+            //double result = 0;
+
+            //switch (op)
+            //{
+            //    case "+":
+            //        result = Add(num1, num2);
+            //        break;
+            //    case "-":
+            //        result = Subtract(num1, num2);
+            //        break;
+            //    case "*":
+            //        result = Multiply(num1, num2);
+            //        break;
+            //    case "/":
+            //        result = Divide(num1, num2);
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid operation!");
+            //        return;
+            //}
+
+            //Console.WriteLine($"Result = {result}");
+            #endregion
+
+            #endregion
         }
+        static double Add(double a, double b)
+        {
+            return a + b;
+        }
+        static double Subtract(double a, double b)
+        {
+            return a - b;
+        }
+        static double Multiply(double a, double b)
+        {
+            return a * b;
+        }
+        static double Divide(double a, double b)
+        {
+            if (b == 0)
+            {
+                Console.WriteLine("Error: Division by zero!");
+                return 0;
+            }
+            return a / b;
+        }
+
     }
+
 }
