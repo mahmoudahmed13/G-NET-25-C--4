@@ -1,4 +1,5 @@
 ﻿using ConsoleApp1.Enums;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ConsoleApp1
 {
@@ -37,7 +38,7 @@ namespace ConsoleApp1
             //    {
             //        Console.Write($"Enter element [{i}]:");
             //        arr[i] = int.Parse(Console.ReadLine());
-                    
+
             //        sum += arr[i]; 
             //    }
             //    average = sum / arr.Length;
@@ -60,13 +61,39 @@ namespace ConsoleApp1
             //    for (int r = size - 1 ; r >= 0 ; r--)
             //    {
             //        Console.Write($" {arr[r]}, ");
-                     
+
             //    }
 
             //}
 
-            #endregion 
+            #endregion
 
+            #region Question 03
+            
+            //int[,] grades = new int[3,4];
+            //for (int i = 0; i < grades.GetLength(0); i++) 
+            //{
+            //    int sum = 0;
+            //    double average;
+            //    Console.WriteLine($"Student {i}: ");
+            //    for (int j = 0; j < grades.GetLength(1); j++)
+            //    {
+            //        bool isTrue = int.TryParse(Console.ReadLine(), out grades[i, j]);
+            //        sum += grades[i, j];
+            //    }
+            //    average = sum / 4;
+            //    Console.WriteLine($"Average of {i} = {average}");
+            //}
+
+            //int totalGrades = 0;
+            //foreach (var item in grades)
+            //{
+            //    totalGrades += item;
+            //}
+            //int totalAverage = totalGrades / grades.Length;
+            //Console.WriteLine($"the overall class averal = {totalAverage}");
+
+            #endregion
 
             #endregion
         }
